@@ -9,15 +9,38 @@
 	<meta name="author" content="Mateusz Świerczyński"/>
 	<link  href="./css/index.css"rel="stylesheet" type="text/css"/>
 	<link  href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700" rel="stylesheet">
+	<link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"rel="stylesheet" >
+	
+	
+	<script>
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("upBtn").style.display = "block";
+			} else {
+				document.getElementById("upBtn").style.display = "none";
+			}
+		}
+
+
+		function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+		}
+		
+</script>
 	
 </head>
 
 <body>
 	<header>
 		
-		<h1 class="logo">Philosophia</h1>
+			<h1 class="logo">
+				<a href="index.html">Philosophia</a>
+			</h1>
 		
-		<nav>
+		<nav id="topnav">
 		
 			<ul class="menu">
 				
@@ -61,7 +84,7 @@
 					
 						<figure>
 						
-							<a href="#"><img src="./img/de-mello.jpg" alt="Anthony de Mello"/></a>
+							<a href="entry.html"><img src="./img/de-mello.jpg" alt="Anthony de Mello"/></a>
 							<figcaption>Anthony de Mello</figcaption>
 						
 						</figure>
@@ -116,21 +139,125 @@
 			
 			</section>
 			
-			<section>
+			<section id="newest">
+			
+				<div class="entries">
+					<header>
+					
+						<h1>Latest entries</h1>
+						<p>Below you can find the latest entries. You can easily check whether there are any new information on this blog.</p>  
+						
+					</header>
+					
+					<div class="entry">
+						
+						<div class="entryimg">
+							<img src="./img/de-mello.jpg" alt="Anthony de Mello"/>
+						</div>
+						
+						<div class="entrytxt">
+							
+							<h2>
+								<a href="entry.html">Anthony de Mello</a>
+							</h2>
+							<i>I wish to become a teacher of the Truth.<br/> Are you prepared to be ridiculed, ignored and starving till you are forty-five?<br/>I am. But tell me: What will happen after I am forty-five?<br/>You will have grown accustomed to it.<br/></i>
+						</div>
+					
+					</div>
+					</a>
+					
+					<div class="entry">
+						
+						<div class="entryimg">
+							<img src="./img/nietzsche.jpg" alt="Fryderyk Nietzsche"/>
+						</div>
+						
+						<div class="entrytxt">
+							
+							<h2>Fryderyk Nietzsche</h2>
+							<i>I wish to become a teacher of the Truth.<br/> Are you prepared to be ridiculed, ignored and starving till you are forty-five?<br/>I am. But tell me: What will happen after I am forty-five?<br/>You will have grown accustomed to it.<br/></i>
+						</div>
+						
+					
+					</div>
+					
+					<div class="entry">
+						
+						<div class="entryimg">
+							<img src="./img/alan-watts.jpg" alt="Alan Watts"/>
+						</div>
+						
+						<div class="entrytxt">
+							
+							<h2>Alan Watts</h2>
+							<i>I wish to become a teacher of the Truth.<br/> Are you prepared to be ridiculed, ignored and starving till you are forty-five?<br/>I am. But tell me: What will happen after I am forty-five?<br/>You will have grown accustomed to it.<br/></i>
+						</div>
+						
+					
+					</div>
+				
+				</div>
 			
 			</section>
 			
 			<section>
+				
+				<div class="contact">
+				
+					<header>
+						
+						<h1>Contact with me</h1>
+						<p>If you want to discuss, suggest a new topic of entry or to start advertising cooperation - I invite you to contact me</p>
+						
+					</header>
+					
+					<a href="#" class="contactButton">Start cooperation</a>
+					
+				</div>
 			
+		
 			</section>
-		
-		
+			
 			</article>
 	</main>
 		
 		<footer>
 		
+		<div class="social">
+		
+			<div class="sociallink">
+			
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				
+			</div>
+			
+			<div class="sociallink">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+			</div>
+			
+			<div class="sociallink">
+				<a href="#"><i class="fa fa-youtube"></i></a>
+			</div>
+			
+			<div class="sociallink">
+				<a href="#"><i class="fa fa-google-plus"></i></a>
+			</div>
+			
+			<div style="clear: both;"></div>
+		
+		</div>
+		
+		<div class="info">
+		
+			All rights reserved &copy; 2018
+			
+		</div>
+		
 		</footer>
+		
+		<button onclick="topFunction()" id="upBtn" title="Go to top">
+			<i class="fa fa-angle-double-up"></i>
+		</button>
 		
 
 

@@ -19,7 +19,6 @@ h1.logo
 	letter-spacing: 5px;
 	margin-top: 50px;
 	margin-bottom: 50px;
-	
 }
 
 h1.logo a
@@ -27,7 +26,6 @@ h1.logo a
 	color: #ddd;
 	text-decoration: none;
 }
-
 
 #topnav
 {
@@ -74,66 +72,43 @@ h1.logo a
 
 }
 
-.categories
-{
-	margin-left: auto;
-	margin-right:auto;
-	width: 950px;
-	text-align: center;
-	
-}
-
 h1
 {
-
 		font-size: 44px;
 		font-weight: 400;
 		color: #39a5f1;
 		margin-bottom: 20px;
 }
 
-.author
+.container
 {
-	display: inline-block;
-	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
 }
 
-.author a
+.west
 {
-	opacity: 0.85;
-}
-
-.author a:hover
-{
-	opacity: 1.0;
-}
-
-figure
-{
-	margin: 10px;
-	padding: 0;
+	float: left;
+	width: 750px;
+	padding: 20px;
+	text-align: justify;
 	
 }
 
-figcaption
+.west h1
 {
-	margin-top: 10px;
-	padding: 0;
+	font-size: 32px;
+	font-weight: 400;
+	color: #39a5f1;
+	margin-bottom: 20px;
 }
 
-.entries
+.east
 {
-	margin-left: auto;
-	margin-right:auto;
-	width: 950px;
-	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-#newest
-{
-	background-color: #191d21;
+	float:left;
+	width: 170px;
+	padding: 20px;
 }
 
 footer
@@ -170,34 +145,7 @@ footer
 
 }
 
-.entry
-{
-	background-color: #222930;
-	padding: 10px;
-	text-align: justify;
-	margin-top: 40px;
-	border-radius: 5px;
-	text-decoration: none;
-}
 
-.entryimg
-{
-	display: inline-block;
-}
-
-.entryimg img
-{
-	height: 90px;
-	width: 90px;
-}
-
-.entrytxt
-{
-	display: inline-block;
-	width: 700px;
-	margin: 10px;
-	
-}
 
 h2
 {
@@ -206,44 +154,6 @@ h2
 	color: #39a5f1;
 }
 
-h2 a
-{
-	color: #39a5f1;
-	text-decoration: none;
-}
-
-
-.contact
-{
-	margin-left: auto;
-	margin-right:auto;
-	width: 950px;
-	text-align: center;
-	padding-bottom: 50px;
-}
-
-.contactButton
-{
-	background-color: #1c74b2;
-	padding: 15px;
-	color: #efefef;
-	font-size: 20px;
-	text-decoration: none;
-	border-radius: 5px;
-	min-width: 300px;
-}
-
-.contactButton:hover
-{
-	background-color: #196499;
-	
-}
-
-.contact p
-{
-	
-	margin-bottom: 50px;
-}
 
 .info
 {
@@ -252,6 +162,23 @@ h2 a
 	padding: 20px;
 	text-align: center;
 	
+}
+
+.east ul
+{
+	padding-left: 20px;
+	
+}
+
+.east ul > li
+{
+	margin-bottom: 5px;
+	
+}
+
+.east img
+{
+		margin-top: 20px;
 }
 
 
@@ -273,4 +200,3 @@ h2 a
 #myBtn:hover {
     background-color: #111820;
 }
-
