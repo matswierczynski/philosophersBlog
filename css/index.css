@@ -1,0 +1,66 @@
+body
+{
+	/*This pattern is downloaded from www.subtlepatterns.com If you need more, that's where to get'em.*/
+	background-image: url("../img/carbon_fibre_big.png");
+	font-family: 'Crimson Text', serif;
+	font-size: 17px;
+	color: white;
+}
+
+h1.logo
+{
+	
+	font-size: 44px;
+	font-weight: 700;
+	color: #ddd;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-top: 50px;
+	margin-bottom: 50px;	
+}
+
+nav
+{
+	
+	background-color: #0084b4;
+	text-align: center;
+	
+}
+
+.menu
+{
+	list-style-type: none;
+	margin: 0px;
+	padding: 10px;
+	font-size: 18px;
+	min-height: 30px;
+	line-height: 200%;
+
+}
+
+.menu > li
+{
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-right: 1px dashed #0041a1;
+	
+}
+
+.menu > li:first-child
+{
+	border-left: 1px dashed #0041a1;
+}
+
+.menu a
+{
+	color: white;
+	text-decoration: none;
+}
+
+.menu a:hover
+{
+	color: #cccccc;
+
+}
