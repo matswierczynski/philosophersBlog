@@ -64,3 +64,50 @@ nav
 	color: #cccccc;
 
 }
+
+.categories
+{
+	margin-left: auto;
+	margin-right:auto;
+	width: 950px;
+	text-align: center;
+	
+}
+
+h1
+{
+
+		font-size: 44px;
+		font-weight: 400;
+		color: #39a5f1;
+		margin-bottom: 20px;
+}
+
+.author
+{
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.author a
+{
+	opacity: 0.85;
+}
+
+.author a:hover
+{
+	opacity: 1.0;
+}
+
+figure
+{
+	margin: 10px;
+	padding: 0;
+	
+}
+
+figcaption
+{
+	margin-top: 10px;
+	padding: 0;
+}
