@@ -10,6 +10,7 @@
 	<link  href="./css/index.css"rel="stylesheet" type="text/css"/>
 	<link  href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700" rel="stylesheet">
 	<link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"rel="stylesheet" >
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	
 	
 	<script>
@@ -29,11 +30,64 @@
 		document.documentElement.scrollTop = 0;
 		}
 		
-</script>
+	</script>
+	
+	<script>
+	
+		var timerChangeSlide;
+		var timerFadeSlide;
+		var timerManualChangePhoto;
+		var numOfPhotos=5;
+		var curNum=Math.floor(Math.random()*5)+1;
+		
+		function setSlide(slideNumber)
+		{
+			clearTimeout(timerChangeSlide);
+			clearTimeout(timerFadeSlide);
+			clearTimeout(timerManualChangePhoto);
+			
+			fadeOutSlide();
+			curNum=slideNumber;
+			timerManualChangePhoto=setTimeout("changeSlide()", 1000);
+		}
+		
+		function fadeOutSlide()
+		{
+			$("#image").fadeOut(1000);
+		
+		}
+		
+		function fadeInSlide()
+		{
+		
+			$("#image").fadeIn(1000);
+		
+		}
+		
+		function changeSlide()
+		{
+		
+			fadeInSlide();
+			var path="<img src=\"./img/"+curNum+".jpg\"/>";
+			
+			document.getElementById("image").innerHTML = path;
+			
+			if (curNum+1 > numOfPhotos) 
+			curNum=1;
+			else
+			curNum++;
+			
+			timerFadeSlide = setTimeout("fadeOutSlide()",4000);
+			timerChangeSlide = setTimeout("changeSlide()",5000);
+		
+		}
+	
+	</script>
+	
 	
 </head>
 
-<body>
+<body onload="changeSlide();">
 	<header>
 		
 			<h1 class="logo">
@@ -51,8 +105,24 @@
 				<li><a href="#">Contact</a></li>
 			
 			</ul>
+			
 		</nav>
 	</header>
+	
+			<div class="categories" id="slider">
+			
+				<div class="num"  onclick="setSlide(1)">1</div>
+				<div class="num"  onclick="setSlide(2)">2</div>
+				<div class="num"  onclick="setSlide(3)">3</div>
+				<div class="num"  onclick="setSlide(4)">4</div>
+				<div class="num"  onclick="setSlide(5)">5</div>
+				<div style="clear: both;"></div>
+				<div id="image"></div>
+				
+			</div>
+		
+	
+	
 	
 	<main>
 		

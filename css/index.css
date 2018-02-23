@@ -83,6 +83,39 @@ h1.logo a
 	
 }
 
+
+#slider
+{
+	width: 255px;
+	height: 238px;
+	padding-top: 10px;
+}
+
+.num
+{
+	float: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 30px;
+	border-right: 1px solid grey;
+	width: 15%;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.num:first-child
+{
+	border-left: 1px solid grey;
+}
+
+#image
+{
+	width: 255px;
+	height: 188px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
 h1
 {
 
